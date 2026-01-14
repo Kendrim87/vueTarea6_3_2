@@ -62,5 +62,5 @@ npm run build
 
 ## Acceso a la aplicación
 
-- **Desarrollo**: `http://localhost:8080/#/`
-- **Producción**: `http://localhost/DWEC/UT06/Tarea6_3_2/vue6/dist/`
+- **Desarrollo**: `http://localhost:8080/`
+- **Producción**: `http://localhost/DWEC/UT06/Tarea6_3_2/`
