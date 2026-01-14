@@ -12,7 +12,7 @@
         
         <div class="botones">
           <router-link to="/" class="btn btn-volver">Volver al listado</router-link>
-          <router-link :to="'/personas/' + id + '/editar'" class="btn btn-editar">Editar</router-link>
+          <router-link :to="'/' + id + '/editar'" class="btn btn-editar">Editar</router-link>
         </div>
       </div>
     </div>

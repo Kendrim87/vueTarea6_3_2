@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
 
 // Importamos los componentes que se usarán como destino de las rutas
@@ -10,13 +10,13 @@ import EditarPersona from './components/EditarPersona.vue'
 // Definimos las rutas de la aplicación
 const rutas = [
   { path: '/', component: Listado },
-  { path: '/personas/:id', component: DetallePerson, props: true },
-  { path: '/personas/:id/editar', component: EditarPersona, props: true }
+  { path: '/:id', component: DetallePerson, props: true },
+  { path: '/:id/editar', component: EditarPersona, props: true }
 ]
 
 // Creamos el router con el array de rutas
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory('/DWEC/UT06/Tarea6_3_2/'),
   routes: rutas
 })
 

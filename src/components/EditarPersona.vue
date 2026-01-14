@@ -30,7 +30,7 @@
 
       <div class="botones">
         <button type="submit" class="btn btn-guardar">Guardar cambios</button>
-        <router-link :to="'/personas/' + id" class="btn btn-cancelar">Cancelar</router-link>
+        <router-link :to="'/' + id" class="btn btn-cancelar">Cancelar</router-link>
       </div>
     </form>
   </div>
@@ -100,7 +100,7 @@ export default {
     guardarCambios() {
       this.datos.actualizarPersona(this.personaEditada);
       // Redirigimos a la página de detalle de la persona
-      this.$router.push('/personas/' + this.id);
+      this.$router.push('/' + this.id);
     }
   }
 }

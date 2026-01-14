@@ -6,7 +6,7 @@
       <!-- Iteramos sobre el array de personas y creamos un enlace para cada una -->
       <div v-for="persona in datos.personas" :key="persona.id" class="persona-item">
         <div class="persona-nombre">{{ persona.nombre }} {{ persona.apellidos }}</div>
-        <router-link :to="'/personas/' + persona.id" class="btn-ver-detalles">Ver detalles</router-link>
+        <router-link :to="'/' + persona.id" class="btn-ver-detalles">Ver detalles</router-link>
       </div>
     </div>
   </div>
